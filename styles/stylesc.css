@@ -1,0 +1,56 @@
+/* Comments Section */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Social Media Sharing */
+.social-sharing {
+    margin-top: 30px;
+}
+
+.social-sharing a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #0288d1;
+    color:beige;
+    text-decoration:none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Page Styles */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about img {
+    max-width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about .bio {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
