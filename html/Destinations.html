@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Destinations</title>
+    <link rel="stylesheet" href="stylesh.css">
+    <script src="filter.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Travel Blog Logo">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <a href="homepage.html">Home</a>
+                    <a href="Destinations.html">Destinations</a>
+                    <li><a href="interactive-map.html">Map</a></li>
+                    <li><a href="photo.html">photo</a></li>
+                    <a href="Blog.html">Blog</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Travel Destinations Section -->
+    <section class="travel-destinations">
+        <div class="container">
+            <h1>Explore by Destination</h1>
+
+            <!-- Filter Options -->
+            <div class="filter-container">
+                <button class="filter-btn" onclick="filterArticles('all')">All</button>
+                <button class="filter-btn" onclick="filterArticles('switzerland')">switzerland</button>
+                <button class="filter-btn" onclick="filterArticles('europe')">Europe</button>
+                <button class="filter-btn" onclick="filterArticles('americas')">Americas</button>
+            </div>
+
+            <!-- Travel Articles -->
+            <div class="articles-grid">
+
+                <!-- Asia Articles -->
+                <article class="article switzerland">
+                    <img src="swi_winter.jpg" alt="swi" class="article-image">
+                    <h2>Exploring the beutiful place of Switzerlnad</h2>
+                    <p>Discover the beauty of Bali's hidden beaches, temples, and culture.</p>
+                    <a href="swi.html">switzerland</a>
+                </article>
+
+                <article class="article switzerland">
+                    <img src="buddhist.jpg" alt="buddhist" class="article-image">
+                    <h2>The Magical Temples of buddhist</h2>
+                    <p>A journey through buddhist  most breathtaking temples and gardens.</p>
+                </article>
+
+                <!-- Europe Articles -->
+                <article class="article europe">
+                    <img src="paris.jpg" alt="Paris" class="article-image">
+                    <h2>Top 5 Must-Visit Spots in Paris</h2>
+                    <p>An unforgettable guide to the best landmarks in the City of Light.</p>
+                    
+                </article>
+
+                <article class="article europe">
+                    <img src="rome.jpg" alt="Rome" class="article-image">
+                    <h2>Discovering Ancient Rome</h2>
+                    <p>Explore the iconic ruins and historical sites of Rome.</p>
+                </article>
+
+                <!-- Americas Articles -->
+                <article class="article Americas ">
+                    <img src="grand-canyon.jpg" alt="Grand Canyon" class="article-image">
+                    <h2>A Road Trip Across the American Southwest</h2>
+                    <p>A journey through deserts, canyons, and iconic landscapes.</p>
+                </article>
+
+                <article class="article Americas">
+                    <img src="machu-picchu.jpg" alt="Machu Picchu" class="article-image">
+                    <h2>Adventures in Machu Picchu</h2>
+                    <p>Hiking the legendary Inca Trail to one of the world's wonders.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

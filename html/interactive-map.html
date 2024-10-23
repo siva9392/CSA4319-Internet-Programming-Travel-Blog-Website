@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Interactive Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Custom Map Styles -->
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Travel Blog Logo">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="interactive-map.html">Map</a></li>
+                    <li><a href="photo.html">photo</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="map-section">
+        <div class="container">
+            <h1>Interactive Travel Map</h1>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+    
+        var map = L.map('map').setView([20, 0], 2);  // Center map at global level
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add markers
+        var locations = [
+            {
+                coords: [35.0116, 135.7681],  
+                title: "ram, india",
+                url: "ram-article.html"
+            },
+            {
+                coords: [48.8566, 2.3522],  
+                title: "Paris, France",
+                url: "paris-article.html"
+            },
+            {
+                coords: [-13.1631, -72.5450],  
+                title: "Machu Picchu, Peru",
+                url: "machu-picchu-article.html"
+            }
+        ];
+
+        // Add markers with links to articles
+        locations.forEach(function(location) {
+            var marker = L.marker(location.coords).addTo(map)
+                .bindPopup('<a href="' + location.url + '">' + location.title + '</a>');
+        });
+    </script>
+
+</body>
+</html>

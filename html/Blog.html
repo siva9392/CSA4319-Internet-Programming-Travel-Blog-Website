@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Article</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="indianflag.jpg" alt="Travel Blog Logo">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="interactive-map.html">Map</a></li>
+                    <li><a href="photo.html">Map</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Article Section -->
+    <section class="blog-article">
+        <div class="container">
+            <article>
+                <header class="article-header">
+                    <h1>The Magical Temples of india</h1>
+                    <p>Posted on October 21, 2024 | By Jane Doe</p>
+                </header>
+
+                <img src="ram.jpg" alt="ram Temple" class="article-image">
+
+                <div class="article-content">
+                    <p>
+                        The Shri Ram Janmabhoomi Teerth Kshetra trust began the first phase of construction of the Ram Temple in March 2020. 
+                        On 25 March 2020, Ram's idol was moved to a temporary location in the presence of Chief Minister Yogi Adityanath.
+                        Larsen & Toubro offered to oversee the design and construction of the temple free of cost and is the contractor of the project.
+                         Central Building Research Institute, National Geophysical Research Institute and the 
+                         Indian Institute of Technology (such as those Bombay, Guwahati, and Madras) are assisting in areas such as soil testing, concrete and design.
+                    </p>
+
+                    <h2>1. kedharnath Temple</h2>
+                    <p>
+                        The temple is not directly accessible by road and has to be reached by a 17 kilometres (11 mi) uphill trek from Gaurikund.
+                         Pony, mule and manchan service is available to reach the temple. According to Hindu legends, 
+                        the temple was initially built by the Pandavas, and is one of the twelve Jyotirlingas, the holiest Hindu shrines of Shiva.
+                    </p>
+                    <img src="kedharnath.jpg" alt="kedharnath Temple" class="article-image">
+
+                    <p>
+                        Kedarnath Temple (Sanskrit: केदारनाथ मंदिर, IAST: Kēdāranātha Mandira, lit. 'temple of the God of the field') is a
+                         Hindu temple, one of the twelve jyotirlinga of Shiva. 
+                        The temple is located on the Garhwal Himalayan range[1] near the Mandakini river, in the state of Uttarakhand, India.
+                         Due to extreme weather conditions, the temple is open to the general public only between the months of April (Akshaya Tritiya) and November
+                          (Kartik Purnima, the autumn full moon)
+
+                    <h2>2. Badrinath Temple</h2>
+                    <p>
+                        Badarinath or Badarinarayana Temple is a Hindu temple dedicated to Vishnu.
+                         It is situated in the town of Badrinath in Uttarakhand, India.
+                         The temple is also one of the 108 Divya Desams dedicated to Vishnu—holy shrines for Vaishnavas—who is worshipped as Badrinath.
+                    </p>
+                    <img src="Badrinath.jpg" alt="Badrinath-Temple" class="article-image">
+
+                    <h3>Watch a short video of badrinath temple</h3>
+                    <video controls class="article-video">
+                        <source src="badrinath.mp4" type="video/mp4">
+                        Your browser does support the video tag.
+                    </video>
+
+                    <p>
+                        Visiting these temples was an unforgettable experience. idia's blend of nature, history, and spirituality 
+                        left a lasting impression on me, and I can’t wait to return someday.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- Social Media Sharing Buttons in views/post.ejs -->
+<div class="social-sharing">
+    <h3>Share this post:</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=<%= encodeURIComponent(`https://yourdomain.com/blogs/${blog._id}`) %>" target="_blank">
+        Share on Facebook
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=<%= encodeURIComponent(`https://yourdomain.com/blogs/${blog._id}`) %>&text=Check out this post!" target="_blank">
+        Share on Twitter
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= encodeURIComponent(`https://yourdomain.com/blogs/${blog._id}`) %>" target="_blank">
+        Share on LinkedIn
+    </a>
+</div>
+
+</body>
+</html>
