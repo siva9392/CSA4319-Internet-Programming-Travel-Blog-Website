@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Photo Gallery</title>
+    <link rel="stylesheet" href="stylesg.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Travel Blog Logo">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="interactive-map.html">Map</a></li>
+                    <li><a href="photo.html">photo</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <div class="gallery-grid">
+
+                <!-- Gallery Items -->
+                <a href="ram.jpg" data-lightbox="travel-gallery" data-title="ram, India">
+                    <img src="ram.jpg" alt="ram" class="gallery-img">
+                </a>
+                
+                <a href="Badrinath.jpg" data-lightbox="travel-gallery" data-title="badrinath, india">
+                    <img src="Badrinath.jpg" alt="badrinath" class="gallery-img">
+                </a>
+
+                <a href="paris.jpg" data-lightbox="travel-gallery" data-title="Paris, France">
+                    <img src="paris.jpg" alt="Paris" class="gallery-img">
+                </a>
+
+                <a href="grand-canyon.jpg" data-lightbox="travel-gallery" data-title="Grand Canyon, USA">
+                    <img src="grand-canyon.jpg" alt="Grand Canyon" class="gallery-img">
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>

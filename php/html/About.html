@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Traveler</title>
+    <link rel="stylesheet" href="stylesc.css">
+</head>
+<body>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="siva.jpg.jpg" alt="About Me">
+            <div class="bio">
+                <p>Hello! My name is <strong>[Traveler's Name]</strong>, and I am a passionate traveler, adventurer, and storyteller. Over the years, I have visited many countries, exploring new cultures, cuisines, and landscapes. I created this blog to share my experiences and inspire others to embark on their own adventures.</p>
+                <p>I focus on travel guides, tips, and personal stories that will help you explore the world. Stay tuned for more updates on my latest journeys and travel insights!</p>
+                <h3>Future Plans</h3>
+                <p>Currently, I'm planning trips to [future destinations], where I hope to immerse myself in local cultures, experience unique activities, and, of course, share my adventures with all of you!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // About page route in server.js
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
+    </script>
+</body>
+</html>
